@@ -38,7 +38,6 @@ module Jekyll
   private
 
     def depth_first(root, &block)
-      return nil if root.nil?
       parent = root.parent
       sibling = root.next
       first_child = root.children.first
